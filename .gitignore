@@ -1,0 +1,24 @@
+# Terraform 디렉토리와 상태 파일
+.terraform/               # Terraform 플러그인과 모듈이 저장되는 디렉토리
+*.tfstate                 # 상태 파일 (리소스 상태를 관리)
+*.tfstate.*               # 백업 상태 파일
+crash.log                 # 충돌 로그 파일
+terraform.tfvars          # 변수 파일 (민감한 정보가 포함될 수 있음)
+terraform.tfvars.json     # JSON 형식의 변수 파일
+
+# 출력 로그 파일 및 플랜 파일
+*.tfplan                  # Terraform 플랜 파일
+*.log                     # 로그 파일
+override.tf               # 재정의 파일
+override.tf.json          # JSON 형식의 재정의 파일
+*.override.tf             # 이름에 override가 포함된 파일
+*.override.tf.json        # JSON 형식의 override 파일
+
+# PEM 키 파일 (보안상의 이유로 제외)
+*.pem                     # PEM 키 파일 (개인 키 포함 가능)
+
+# 기본 편집기와 시스템 파일
+.DS_Store                 # macOS에서 생성되는 시스템 파일
+.idea/                    # JetBrains IDE (예: IntelliJ) 프로젝트 설정
+.vscode/                  # Visual Studio Code 설정
+*.swp                     # Vim 스왑 파일
